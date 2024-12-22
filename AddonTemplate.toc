@@ -1,0 +1,6 @@
+## Interface: 110007
+## Title: WoWAddonTemplate
+## Notes: A simple monkey helper for your UI needs.
+## Author: rwrose02
+
+WoWAddonTemplate_Core.lua
