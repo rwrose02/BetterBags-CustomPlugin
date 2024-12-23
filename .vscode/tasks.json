@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Local release.sh",
+			"type": "shell",
+			"command": "${workspaceFolder}/.release/release.sh",
+			"args": ["-u", "-z", "-o", "-d"],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+    {
+      "label": "Symlink AddOn Folder",
+      "type": "shell",
+      "command": "sh",
+      "args": [
+        "-c",
+        "cmd.exe /c mklink /D \"C:\\\\Games\\\\World of Warcraft\\\\_retail_\\\\Interface\\\\AddOns\\\\${workspaceFolderBasename}\" \"$(wslpath -w ${workspaceFolder}/.release/${workspaceFolderBasename})\""
+      ],
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+	]
+}

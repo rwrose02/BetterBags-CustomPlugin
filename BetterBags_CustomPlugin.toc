@@ -1,0 +1,7 @@
+## Interface: 110007
+## Title: BetterBags_CustomPlugin
+## Notes: A custom bag extension for BetterBags
+## Author: @file-author@
+## Version: @project-revision@
+## Dependencies: BetterBags
+BetterBags_CustomPlugin.lua
